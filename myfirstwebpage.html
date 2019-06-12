@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--<script src="todolist.js"></script>--> 
+    <script>
+    function addtask() {
+        var inputvalue = document.getElementById('task').value;
+        document.getElementById('tablelist').innerHTML = document.getElementById('tablelist').innerHTML + "<br>" + inputvalue;
+        document.getElementById('task').value = "";
+    }
+    </script>
+    </head>
+    <body>
+        <span> Task: </span>
+        <input type="text" id="task" name = task>
+        <button onclick="addtask()"> add </button> 
+
+        <div id="tablelist"></div>
+    </body>
+</html>
